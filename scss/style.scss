@@ -46,9 +46,7 @@ picture img{
     display: grid;
     gap: f.calcEm(15);
 
-    p{
-        color: var(--dark-grayish-blue);
-    }
+    p{color: var(--dark-grayish-blue);}
     p:nth-child(1){
         letter-spacing: f.calcEm(1.5);
         text-transform: uppercase;
@@ -58,12 +56,8 @@ picture img{
         gap: f.calcEm(10);
         align-items: center;
     }
-    .prices p:nth-child(1){
-        color: var(--dark-cyan);
-    }
-    .prices p:nth-child(2){
-        text-decoration: line-through;
-    }
+    .prices p:nth-child(1){color: var(--dark-cyan);}
+    .prices p:nth-child(2){text-decoration: line-through;}
 
     h1,.prices p:nth-child(1){
         font-family: $fraunces;
@@ -82,11 +76,9 @@ picture img{
         justify-content: center;
         gap: f.calcEm(10);
 
-        &:hover{
-            background: var(--very-dark-blue);
-        }
+        &:hover{background: var(--very-dark-blue);}
     }
 }
 
-.attribution { font-size: 11px; text-align: center; display: none; }
-.attribution a { color: var(--attribution-blue); }
+.attribution {font-size: 11px; text-align: center;}
+.attribution a {color: var(--attribution-blue);}
