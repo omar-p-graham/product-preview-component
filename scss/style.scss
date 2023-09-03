@@ -12,12 +12,24 @@ body{
     height: 100vh;
     overflow-x: hidden;
     padding: f.calcEm(20);
+    
+    @media (min-width: f.calcEm(992)){
+        display: grid;
+        place-items: center;
+    }
 }
 
 main{
     width: clamp(f.calcEm(344),100%,f.calcEm(1440));
     border-radius: f.calcEm($radius);
     background: var(--white);
+
+    @media (min-width: f.calcEm(992)){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: f.calcEm(450);
+        width: f.calcEm(600);
+    }
 }
 
 picture img{
@@ -25,6 +37,11 @@ picture img{
     width: 100%;
     height: 100%;
     border-radius: f.calcEm($radius) f.calcEm($radius) 0 0;
+
+    @media (min-width: f.calcEm(992)){
+        border-radius: f.calcEm($radius) 0 0 f.calcEm($radius);
+        height: f.calcEm(450);
+    }
 }
 
 #product-details{
