@@ -6,17 +6,14 @@ $fraunces: 'Fraunces', serif;
 $radius: 10;
 
 body{
+    display: grid;
+    place-items: center;
     background: var(--cream);
     font-family: $montserrat;
     font-size: f.calcRem(14);
     height: 100vh;
     overflow-x: hidden;
     padding: f.calcEm(20);
-    
-    @media (min-width: f.calcEm(992)){
-        display: grid;
-        place-items: center;
-    }
 }
 
 main{
